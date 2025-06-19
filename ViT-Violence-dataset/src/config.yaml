@@ -1,0 +1,24 @@
+# Configuration file for Real Life Violence Detection
+# Update these paths and parameters as needed
+
+dataset:
+  path: ./src/dataset
+  non_violence_dir: nonViolence
+  violence_dir: Violence
+
+training:
+  epochs: 100
+  batch_size: 16
+  img_size: 224
+  patch_size: 16
+  embed_size: 198
+  mlp_hidden: 792
+  encoder_blocks: 5
+  sequence_length: 16
+  dropout: 0.1
+  learning_rate: 0.001
+  seed: 42
+
+model:
+  save_format: h5
+  save_dir: ./models/
